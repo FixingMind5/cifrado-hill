@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400|Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Cifrado Hill</title>
+  </head>
+  <body>
+    <div class="encabezado">
+      <h1>CIFRADO HILL</h1>
+    </div>
+
+    <div class="tablets">
+      <div class="infoOne">
+        <img src="https://picsum.photos/id/26/400/250" alt="">
+        <div class="textOne">
+          <p>Ocultar cosas por pena o por seguridad ha sido siempre una necesidad natural del ser humano</p>
+        </div>
+      </div>
+
+      <div class="cifrar">
+        <div class="ingresarTexto">
+          <form class="textoFormulario" action="{% url "cypher" %}" method="POST">
+            {%  csrf_token %}
+
+            <input type="text" name="normalText" placeholder="Ingrese el texto" required>
+            <input type="submit" name="" value="CIFRAR">
+          </form>
+        </div>
+        <div class="tomarTexto">
+          <p class="textoCifrado"
+             style="
+             font-size: 20px;
+             font-family: 'Montserrat', sans-serif;
+             justify-content: center;
+             padding: 30px;
+             font-weight: 200;
+             text-align: center;
+             color: #C5DBA2;
+            ">
+            {{ hillString }}
+          </p>
+        </div>
+      </div>
+
+      <div class="infoThree">
+        <img src="https://picsum.photos/id/336/400/250" alt="">
+        <div class="textOne">
+          <p>Es por eso que se han inventado una inmensa variedad de cifrados a lo largo del tiempo. En este ejemplo, el cifrado Hill.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
