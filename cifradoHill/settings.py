@@ -85,9 +85,12 @@ from decouple import config
     }
 }"""
 
+# to install psycopg2
+# env LDFLAGS="-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib" pip install psycopg2
+
 DATABASES = {
     'default': dj_database_url.config (
-        default=config('DATABASE_URL')
+        default=config('HEROKU_POSTGRESQL_PUCE_URL')
     )
 }
 
