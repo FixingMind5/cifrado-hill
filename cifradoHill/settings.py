@@ -78,21 +78,21 @@ WSGI_APPLICATION = 'cifradoHill.wsgi.application'
 import dj_database_url
 from decouple import config
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-}"""
+}
 
 # to install psycopg2
 # env LDFLAGS="-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib" pip install psycopg2
 
-DATABASES = {
+"""DATABASES = {
     'default': dj_database_url.config (
         default=config('HEROKU_POSTGRESQL_PUCE_URL')
     )
-}
+}"""
 
 
 # Password validation
@@ -131,7 +131,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATIC_URL = '/static/'
 
