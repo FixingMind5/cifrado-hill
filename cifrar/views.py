@@ -17,7 +17,7 @@ def _split_empty(word):
 
     return array
 
-alphabet = _split_empty("abcdefghijklmnñopqrstuvwxyz")
+alphabet = _split_empty("abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890!·$%&/()=|@#¢∞¬÷“”≠\"áéíóúäëöüïç🔥👅🍆💦🍑🤤👌👈")
 
 def _know_scalar(vector):
     array = []
