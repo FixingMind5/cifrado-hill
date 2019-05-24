@@ -1,0 +1,138 @@
+body {
+  background-color: #EDF9FF;
+}
+
+.encabezado {
+}
+
+.encabezado h1 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #5AA6CC;
+  color: #EDF9FF;
+  font-weight: 200;
+  margin: 0px;
+  padding: 20px 0px;
+}
+
+.tablets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px;
+  grid-template-areas: "infoOne cifrar infoThree";
+  justify-items: center;
+  align-items: center;
+}
+
+.infoOne, .infoThree {
+  background-color: #5AA6CC;
+  width: 400px;
+  height: 500px;
+  margin-top: 100px;
+  border-radius: 20px;
+  -webkit-box-shadow: 11px 7px 16px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 7px 16px -2px rgba(0,0,0,0.75);
+  box-shadow: 11px 7px 16px -2px rgba(0,0,0,0.75);
+}
+
+.cifrar {
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "ingresarTexto"
+                       "tomarTexto";
+  align-items: end;
+}
+
+.ingresarTexto {
+  background-color: #5AA6CC;
+  width: 400px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 11px 7px 16px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 7px 16px -2px rgba(0,0,0,0.75);
+  box-shadow: 11px 7px 16px -2px rgba(0,0,0,0.75);
+}
+
+.tomarTexto {
+  background-color: #5AA6CC;
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  -webkit-box-shadow: 11px 7px 16px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 7px 16px -2px rgba(0,0,0,0.75);
+  box-shadow: 11px 7px 16px -2px rgba(0,0,0,0.75);
+}
+
+.textoFormulario {
+  display: grid;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type='text'] {
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  width: 300px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #5AA6CC;
+  color: #EDF9FF;
+  border: 2px solid #EDF9FF;
+}
+
+input[type='text']::placeholder {
+  color: #EDF9FF;
+}
+
+input[type='submit'] {
+  width: 70px;
+  margin-left: 120px;
+  font-size: 15px;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 5px;
+  background-color: #5AA6CC;
+  border: 2px solid #EDF9FF;
+  color: #EDF9FF;
+  padding: 5px;
+}
+
+input[type='submit']:hover {
+  background-color: #EDF9FF;
+  color: #5AA6CC;
+  cursor: pointer;
+}
+
+.infoOne img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  position: relative;
+}
+
+.textOne {
+  font-family: 'Roboto Mono', monospace;
+  text-align: justify;
+  background-color: #EDF9FF;
+  width: 300px;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 20px;
+  margin-left: 30px;
+  position: relative;
+  bottom: 60px;
+  color: #5E7480;
+}
+
+.infoThree img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.textoCifrado {
+
+}
